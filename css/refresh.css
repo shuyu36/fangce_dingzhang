@@ -1,0 +1,32 @@
+.refresh_block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+  gap: 20px;
+}
+
+.refresh_block p {
+  background: #cac7c0;
+  text-align: center;
+  padding: 3px 5px;
+}
+
+.content_text {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding: 50px 0;
+}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .refresh_block p {
+
+    font-size: 14px;
+}
+}

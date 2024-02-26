@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>鼎彰工程有限公司</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./image/logo.webp"
+              alt="鼎彰工程有限公司LOGO"
+              width="303px"
+              height="70px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html"
+                  ><p>關於鼎彰</p>
+                  <p style="font-size: 12px">About Us</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">
+                  <p>產品與案例</p>
+                  <p style="font-size: 12px">Products & Case</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./refresh.html">
+                  <p>舊牆重塗</p>
+                  <p style="font-size: 12px">Refresh</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacts.html">
+                  <p>聯絡我們</p>
+                  <p style="font-size: 12px">Contact Us</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 背景圖 -->
+    <article>
+      <div class="top_banner">
+        <img
+          src="./image/index_banner.webp"
+          alt="背景圖"
+          width="1920px"
+          height="900px"
+        />
+      </div>
+    </article>
+
+    <!-- 最新案例跑馬燈 -->
+    <section class="new_case_block">
+      <div>
+        <div
+          style="
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            border-top: 2px solid #acaba9;
+            border-bottom: 2px solid #acaba9;
+          "
+        >
+          <p
+            style="
+              border-left: 3px solid #1090fe;
+              color: #1090fe;
+              padding-left: 5px;
+              font-weight: bold;
+            "
+          >
+            最新案例
+          </p>
+          <p style="color: #acaba9">NEW CASE</p>
+        </div>
+      </div>
+      <div class="marquee-container">
+        <div class="marquee-content">
+          新工法 !! 外牆磁磚免敲除舊外牆翻新改造工法
+        </div>
+      </div>
+    </section>
+
+    <!-- 案例圖片 -->
+    <section class="case_img_block">
+      <ul>
+        <li>
+          <img
+            src="./image/index_case1.webp"
+            alt="小義大利餐廳"
+            width="256px"
+            height="199px"
+          />
+          <div class="case_text">
+            <p>小義大利餐廳</p>
+            <p>義大利建築外觀，浪漫熱情色調，彷彿置身歐洲...</p>
+            <a
+              href="products.html?data-tab=products_5"
+              class="tab-link"
+              data-tab="products_5"
+              >more</a
+            >
+          </div>
+        </li>
+        <li>
+          <img
+            src="./image/index_case2.webp"
+            alt="苗栗頭份別墅"
+            width="256px"
+            height="199px"
+          />
+          <div class="case_text">
+            <p>苗栗頭份別墅</p>
+            <p>巴洛克式建築外觀，採造型線版及羅馬柱...</p>
+            <a   href="products.html?data-tab=products_5"
+            class="tab-link"
+            data-tab="products_2">more</a>
+          </div>
+        </li>
+        <li>
+          <img
+            src="./image/index_case3.webp"
+            alt="高鐵戀館MOTEL"
+            width="256px"
+            height="199px"
+          />
+          <div class="case_text">
+            <p>高鐵戀館MOTEL</p>
+            <p>採用石頭漆，以素雅的外觀，構築日式的風格...</p>
+            <a   href="products.html?data-tab=products_2"
+            class="tab-link"
+            data-tab="products_5">more</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <section class="footer_block">
+        <div>
+          <a href="index.html">
+            <img
+              src="./image/footer_logo.webp"
+              alt="鼎彰工程有限公司LOGO"
+              width="345px"
+              height="60px"
+            />
+          </a>
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <a
+            href="tel:0932678984"
+            target="_blank"
+            style="color: #ffffff; font-size: 16px; font-weight: 400"
+            >行動：0932-678-984</a
+          >
+          <a
+            href="tel:0423266719"
+            target="_blank"
+            style="color: #ffffff; font-size: 16px; font-weight: 400"
+            >電話：(04)2326-6719</a
+          >
+          <a
+            href="tel:0423266716"
+            target="_blank"
+            style="color: #ffffff; font-size: 16px; font-weight: 400"
+            >傳真：(04)2326-6716</a
+          >
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <p>聯絡人：陳韋銓（專案經理）</p>
+
+          <a
+            href="mailto:magic.lish@gmail.com.tw?subject=Feedback&body=Message"
+            target="_blank"
+            style="color: #ffffff; font-size: 16px; font-weight: 400"
+          >
+            電子信箱：magic.lish@gmail.com
+          </a>
+          <a
+            href="https://maps.app.goo.gl/wGTpUNhuqgENDiJG9"
+            target="_blank"
+            style="color: #ffffff; font-size: 16px; font-weight: 400"
+          >
+            地址：404台中市西屯區大墩二十街151號
+          </a>
+        </div>
+      </section>
+      <p
+        style="
+          color: #fff;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+          text-align: center;
+          padding-bottom: 5px;
+        "
+      >
+        Copyright© 2024 鼎彰工程有限公司 All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

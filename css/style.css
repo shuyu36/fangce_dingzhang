@@ -1,0 +1,297 @@
+body {
+  font-family: "Noto Sans TC", "Montserrat", sans-serif, Verdana;
+  letter-spacing: 2px;
+  background: #fcf6e8;
+  line-height: 1.5;
+  color: #5b5b5b;
+}
+
+/* 導覽列 */
+header {
+  background-color: #118f00;
+  width: 100%;
+}
+
+a {
+  padding: 0;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 50px;
+  margin-top: 50px;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.navbar {
+  max-height: 90px;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding: 0 50px;
+}
+
+.navbar-expand-lg .navbar-nav {
+  gap: 40px;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fcf6e8;
+  margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ecbb92;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.nav-item {
+  border-left: #fcf6e8 2px solid;
+}
+
+/* banner */
+.top_banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* 共同css */
+
+/* 標題英文 */
+.title_text {
+  font-size: 20px;
+  background: #e6ddc0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 7px 0;
+}
+.title_text img {
+  width: 30px;
+  height: 30px;
+}
+.en_text {
+  color: #dacba0;
+  font-size: 45px;
+}
+
+/* 內文 */
+.content_text {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+  border-bottom: 2px solid #e0dedf;
+  margin-bottom: 50px;
+}
+
+/* 側邊選單 */
+
+.mobile_select {
+  display: none;
+}
+
+.select_title img {
+  width: 50px;
+  height: 50px;
+}
+
+.select_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 5px;
+  border-bottom: 2px solid #000000;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.select_cont {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select_cont li {
+  border-bottom: 1px dashed black;
+  text-align: end;
+  /* padding: 0 13px; */
+  margin: 0 7px;
+}
+
+.col-3 a {
+  color: #000000;
+}
+.col-3 a:hover {
+  color: #118f00;
+}
+
+/* 回首頁 */
+.index_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+  border: 3px solid #f5cf62;
+  border-radius: 50px;
+  padding: 0 20px;
+  justify-content: flex-end;
+}
+
+.index_title img {
+  position: absolute;
+  left: -10px;
+  width: 66px;
+  height: 50px;
+}
+/* footer */
+footer {
+  background-color: #9f9c8d;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.footer_block {
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+  color: #fff;
+  line-height: 30px;
+  gap: 20px;
+}
+
+@media (max-width: 1400px) {
+  /* 側邊選單 */
+  .select_title {
+    font-size: 16px;
+    padding: 0 10px 0 5px;
+  }
+  .index_title {
+    font-size: 16px;
+    padding: 0 10px 0 5px;
+}
+}
+@media (max-width: 1200px) {
+  /* 導覽列 */
+  .navbar-expand-lg .navbar-nav {
+    gap: 20px;
+  }
+
+  footer img {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  /* p {
+    font-size: 14px;
+  } */
+  .navbar-expand-lg .navbar-nav {
+    gap: 20px;
+    background: #fcf6e8;
+    text-align: center;
+    padding: 20px;
+
+    position: relative;
+    z-index: 11111;
+  }
+  .nav-item {
+    border-bottom: 2px solid #10610b;
+    padding-bottom: 5px;
+    border-left: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #10610b;
+    font-weight: bold;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #023506;
+  }
+
+  /* 側邊圖 */
+  .col-3 {
+    display: none;
+  }
+  .col-9 {
+    width: 100%;
+  }
+
+  /* 手機版選單 */
+  .mobile_select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .mobile_select li {
+    border-bottom: 1px dashed black;
+    text-align: end;
+    /* padding: 0 13px; */
+    margin: 0 7px;
+  }
+
+  .mobile_select a {
+    color: #000000;
+  }
+  .mobile_select a:hover {
+    color: #118f00;
+  }
+
+  .footer_block {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .content_text {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .navbar img {
+    width: 180px;
+  }
+  section {
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+  /* 標題 */
+  .en_text {
+    color: #dacba0;
+    font-size: 27px;
+  }
+
+  .content_text {
+  }
+
+  footer img {
+    width: 250px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
