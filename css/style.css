@@ -34,9 +34,10 @@ section {
 }
 
 .navbar {
-  max-height: 90px;
+  /* max-height: 90px; */
   max-width: 1420px;
   margin: 0 auto;
+  padding-bottom: 0;
 }
 
 .container-fluid {
@@ -47,9 +48,12 @@ section {
   gap: 40px;
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: rgb(255 255 255 / 55%);
+  border-color: rgba(0, 0, 0, 0);
   margin-right: 20px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../image/menu.svg);
 }
 
 .navbar-brand {
